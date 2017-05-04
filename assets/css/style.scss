@@ -2,7 +2,11 @@
 ---
 
 @import "{{ site.theme }}";
+.page-header {
+    padding-top: 0px;
+}
 nav {
+    padding-bottom: 32px;
     ul {
         padding: 0px;
         li {

@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <nav>
-      <ul>
-        {% for entry in site.data.navigation.toc %}
-          <li><a href="{{ entry.url }}">{{ entry.page }}</a><li>
-        {% endfor %}
-      </ul>
-    </nav>
     <section class="page-header">
+      <nav>
+        <ul>
+          {% for entry in site.data.navigation.toc %}
+            <li><a href="{{ entry.url }}">{{ entry.page }}</a><li>
+          {% endfor %}
+        </ul>
+      </nav>
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
